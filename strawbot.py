@@ -6,7 +6,7 @@ import requests
 def err(*args, **kwargs):
 	print(*args, file = sys.stderr, **kwargs)
 
-parser = argparse.ArgumentParser(description = 'Vote in strawpoll.com polls')
+parser = argparse.ArgumentParser(description = 'Spam-vote in strawpoll.com polls')
 parser.add_argument('pid', help = 'The poll ID to vote in (found at end of URL).')
 parser.add_argument('oids', help = 'The checkbox ID(s) to submit votes for. Separated by #s. You can find this with inspect element (name= attribute on input[type=checkbox]).')
 
